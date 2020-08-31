@@ -1,0 +1,9 @@
+<h1>Destination show page</h1>
+
+<% @recent_posts.each do |post| %>
+<p><%= post.title %></p>
+<% end %>
+
+<%= link_to @destination.most_liked.title, post_path(@destination.most_liked.id) %>
+
+<%= @destination.avg_age %>

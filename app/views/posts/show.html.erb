@@ -1,0 +1,11 @@
+<h1>Bloggers post Malone😎</h1>
+
+<%= @post.title %><br>
+<%= @post.content %><br>
+<%= link_to @post.blogger.name, blogger_path(@post.blogger.id) %><br>
+<%= link_to @post.destination.name, destination_path(@post.destination.id) %><br><br>
+<%= button_to "like", post_path(@post), method: :patch %>
+
+
+
+
